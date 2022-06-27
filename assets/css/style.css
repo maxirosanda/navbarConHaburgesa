@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.navbar ul{
+    width: 100%;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+
+.navbar ul li {
+    padding: 10px;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+
+}
+.navbar input{
+    display: none;
+}
+.navbar label {
+    cursor: pointer;
+}
+.fa-bars{
+    color: white;
+    font-size: 30px;
+    padding: 15px
+}
+
+.navbar input:checked + ul {
+    display: flex;
+}
+
+@media(min-width:768px){
+    .navbar ul{
+        justify-content: end;
+        flex-direction: row;
+    }
+    .navbar label{
+        display: none;
+    }
+
+    
+}
+
+main{
+    width: 100%;
+    height: 400px;
+    background-color: blueviolet;
+}
