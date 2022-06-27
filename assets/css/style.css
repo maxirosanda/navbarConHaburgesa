@@ -11,12 +11,11 @@
 
 .navbar ul{
     width: 100%;
+    background-color: blue;
     list-style: none;
     display: none;
     flex-direction: column;
     align-items: center;
-   
-
 }
 
 .navbar ul li {
@@ -42,10 +41,21 @@
 
 .navbar input:checked + ul {
     display: flex;
+
+}
+@keyframes desplegable {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: auto;
+    }
 }
 
 @media(min-width:768px){
+
     .navbar ul{
+        display: flex;
         justify-content: end;
         flex-direction: row;
     }
